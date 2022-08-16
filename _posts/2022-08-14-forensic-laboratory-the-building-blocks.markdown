@@ -6,7 +6,7 @@ tags: [laboratory,infrastructure]
 comments: true
 ---
 
-
+## Introduction
 Hiya!
 
 This is the beginning of a series of posts detailing my <italicize>lovely<italicize> experience of building up a new Forensics Laboratory(Lab) for $lastjob. I was put in the unique position to (partially) design and manage construction of the new facility, and move all our infrastructure over while adding onto the backbone and other infrastructure we had previously. As some background, I was managing this facility due to the prior lab manager leaving, and me, while not terribly close to the facility, had spent the most time in forensic labs, including that one, to anyone local, and was thus delegated to managing that facility. The move was not something I had ever planned to take on, but corporate changes with the building required a new facility to be built. Most of what was in the old facility was all tribal knowledge, so alongside the planning/building/move, it was critical to actually document why things were done in such a way for anyone else who took over after me. 
