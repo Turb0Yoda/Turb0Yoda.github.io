@@ -46,7 +46,7 @@ For the new location, we were able to segregate the lab into two rooms:
 
 The primary room housed our forensic machines and basic supplies, adapters, etc. Anyone on the ProServ team was allowed into this room. The second room housed evidence safes and servers. Only the Lab Manager and Data Custodians were allowed into this room. 
 
-### Additional Considerations to Physical Location
+## Additional Considerations to Physical Location
 
 Aside from the access requirements above, we also added several extras that aren't entirely required, but definitely helpful. 
 
