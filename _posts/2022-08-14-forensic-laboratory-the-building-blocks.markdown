@@ -13,7 +13,7 @@ This is the beginning of a series of posts detailing my <italicize>lovely<italic
 
 Additionally, we also had the FBI CJIS audit and ISO 27001/27002 audit and attestation to content with. Both have extremely similar, if not identical compliancy requirements for most items, however, FBI CJIS is what let us work with local/state/federal governments on various cases if need be. The CJIS audit also comes with the lovely reminder that if evidence is mishandled, the data custodian gets time in a comfy cell!
 
-A lot of this information is based off this lovely book here: [Digital Forensics Processing and Procedures: Meeting the Requirements of ISO 17020, ISO 17025, ISO 27001 and Best Practice Requirements] (https://smile.amazon.com/gp/product/1597497428), which was reccomended to me by my former co-worker/mentor(thanks J.W!) who has a hell of a lot more experience with this stuff, and who guided me through the finer points of the entire process.
+A lot of this information is based off this lovely book here: [Digital Forensics Processing and Procedures: Meeting the Requirements of ISO 17020, ISO 17025, ISO 27001 and Best Practice Requirements](https://smile.amazon.com/gp/product/1597497428), which was reccomended to me by my former co-worker/mentor(thanks J.W!) who has a hell of a lot more experience with this stuff, and who guided me through the finer points of the entire process.
 
 ## Physical Location
 
