@@ -72,8 +72,8 @@ For on-the-go imaging/processing/analysis, Silicon Forensics offers the cute lit
 
  <table>
   <tr>
-    <td><img src="/assets/post_images/sciforce_nano_w_monitor.png" width=270 height=270></td>
-    <td><img src="/assets/post_images/ufred_front.png" width=270 height=270></td>
+    <td><img src="/assets/post_images/sciforce_nano_w_monitor.png" width="270" height="270"></td>
+    <td><img src="/assets/post_images/ufred_front.png" width="270" height="270"></td>
   </tr>
   <tr>
     <td>Nano</td>
