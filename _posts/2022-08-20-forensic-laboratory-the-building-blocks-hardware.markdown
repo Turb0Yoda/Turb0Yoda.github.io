@@ -1,10 +1,10 @@
---- 
-title: "Forensics Laboratory - The Building Blocks - Hardware Pt. 1" 
-author: Turb0Yoda 
-date: 2022-08-17 21:30:00 -0700 
-tags: [laboratory,infrastructure,hardware] 
-comments: true 
---- 
+---
+title:  "Forensics Laboratory - The Building Blocks - Hardware Pt. 1"
+author: Turb0Yoda
+date:   2022-08-17 22:00:00 -0700
+tags: [laboratory,infrastructure,hardware]
+comments: true
+---
 
 ## Introduction 
 
