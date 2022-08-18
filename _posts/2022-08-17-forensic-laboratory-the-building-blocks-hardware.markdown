@@ -18,7 +18,7 @@ This is part two in my little series about building a forensics lab from the gro
 The first step is to have a bank account with a large amount of money. I wish this was a joke, but unfortunately, tailor-built forensic workstations are extremely pricey. Not only should the hardware be top of the line and beefy, but items like drive cages, DVD/Blu-Ray/CD drives, and even write blockers are often shoved into these chassis. For example, a base configuration [SiForce Lightning X](https://siliconforensics.com/products/forensic-workstations/tower-workstations/siforce-lightning-x-hardware-defined-forensics.html) comes out to a lovely 10,695.00 USD before tax, which isn't an easy pill to swallow. 
 
 <figure>
-    <img src="/assets/post_images/sciforce_lightning_x.png"
+    <img src="https://raw.githubusercontent.com/Turb0Yoda/turb0yoda.github.io/master/assets/post_images/sciforce_lightning_x.png"
          alt="SciForce Lightning X">
     <figcaption>Remember what I said about shoved chock-full of gear? This is how SciForce rolls.</figcaption>
 </figure>
