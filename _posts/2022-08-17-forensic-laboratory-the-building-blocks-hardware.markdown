@@ -20,7 +20,7 @@ The first step is to have a bank account with a large amount of money. I wish th
 <figure>
     <img src="https://raw.githubusercontent.com/Turb0Yoda/turb0yoda.github.io/master/assets/post_images/sciforce_lightning_x.png"
          alt="SciForce Lightning X">
-    <figcaption>Remember what I said about shoved chock-full of gear? This is how SciForce rolls.</figcaption>
+<center>    <figcaption>Remember what I said about shoved chock-full of gear? This is how SciForce rolls.</figcaption> </center>
 </figure>
 
 
@@ -70,16 +70,18 @@ Now let's say you get a call from your boss, and suddenly, you find yourself wit
 
 For on-the-go imaging/processing/analysis, Silicon Forensics offers the cute little [Nano](https://siliconforensics.com/products/forensic-workstations/forensic-laptops/siforce-nano-ii-hardware-defined-forensics.html), and Digital Intelligence offers the also cute little [μFRED](https://digitalintelligence.com/store/products/microfred?taxon_id=42). These little suckers are a full forensic workstation with a built-in write blocker. You have the choice to have them come with a pelican case and other extra goodies. We bundled ours with a portable monitor and mouse/keyboard setup - all that is needed is a power source and you have a ready-to-go workstation. The main downside to this solution is that it's extremely bulky and won't really fit in a carry-on section. 
 
+ <center>
  <table>
   <tr>
-    <td><img src="/assets/post_images/sciforce_nano_w_monitor.png" width="270" height="270"></td>
-    <td><img src="/assets/post_images/ufred_front.png" width="270" height="270"></td>
+    <td><img src="https://raw.githubusercontent.com/Turb0Yoda/turb0yoda.github.io/master/assets/post_images/sciforce_nano_w_monitor.png" width="270" height="270"></td>
+    <td><img src="https://raw.githubusercontent.com/Turb0Yoda/turb0yoda.github.io/master/assets/post_images/ufred_front.png" width="270" height="270"></td>
   </tr>
   <tr>
     <td>Nano</td>
     <td>μFRED</td>
   </tr>
  </table>
+ </center>
 
 So, for those of you who are like me and can't carry anything without breaking it, or simply don't have more luggage space, both companies offer "forensic laptops". These are nothing more than extremely beefy gaming laptops/workstation laptops(SiForce's looks eerily like an Alienware to me). The main benefit of these (other than having RGB for better performance :)) is that they're *much* smaller but can pack up to a desktop processor depending on the specific laptop, such as this [Sager](https://www.sagernotebook.com/Notebook-NP9672M-G1.html), which packs up to a desktop Intel i9 and 128GB of RAM. I would really hesitate to call this a laptop, more of a small desktop with a built in UPS since that battery won't last if it must process items. This, combined with a stand-alone write-blocker (I'll get to these in a later section), will be able to do what those specialized little boxes can do. 
 
