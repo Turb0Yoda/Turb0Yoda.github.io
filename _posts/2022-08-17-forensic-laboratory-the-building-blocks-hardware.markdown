@@ -16,13 +16,13 @@ This is part two in my little series about building a forensics lab from the gro
 
 ### Forensic Towers 
 The first step is to have a bank account with a large amount of money. I wish this was a joke, but unfortunately, tailor-built forensic workstations are extremely pricey. Not only should the hardware be top of the line and beefy, but items like drive cages, DVD/Blu-Ray/CD drives, and even write blockers are often shoved into these chassis. For example, a base configuration [SiForce Lightning X](https://siliconforensics.com/products/forensic-workstations/tower-workstations/siforce-lightning-x-hardware-defined-forensics.html) comes out to a lovely 10,695.00 USD before tax, which isn't an easy pill to swallow. 
-<!---
+
 <figure>
     <img src="/assets/post_images/sciforce_lightning_x.png"
          alt="SciForce Lightning X">
     <figcaption>Remember what I said about shoved chock-full of gear? This is how SciForce rolls.</figcaption>
 </figure>
--->
+
 
 For Reference, that system does have 40 threads, 192GB of RAM, and several storage areas for casework (examples in parentheses): 
 * 500GB NVMe Boot 
@@ -69,7 +69,7 @@ So, this section is pretty short and sweet. Offhand, I am not entirely sure if s
 Now let's say you get a call from your boss, and suddenly, you find yourself with a plane ticket for a flight that leaves in 4 hours, and you need to somehow pack all your gear into a neat little case for on-site imaging and analysis. Well fear not, but there are a few options for this! 
 
 For on-the-go imaging/processing/analysis, Silicon Forensics offers the cute little [Nano](https://siliconforensics.com/products/forensic-workstations/forensic-laptops/siforce-nano-ii-hardware-defined-forensics.html), and Digital Intelligence offers the also cute little [μFRED](https://digitalintelligence.com/store/products/microfred?taxon_id=42). These little suckers are a full forensic workstation with a built-in write blocker. You have the choice to have them come with a pelican case and other extra goodies. We bundled ours with a portable monitor and mouse/keyboard setup - all that is needed is a power source and you have a ready-to-go workstation. The main downside to this solution is that it's extremely bulky and won't really fit in a carry-on section. 
-<!---
+
  <table>
   <tr>
     <td><img src="/assets/post_images/sciforce_nano_w_monitor.png" width=270 height=270></td>
@@ -80,7 +80,7 @@ For on-the-go imaging/processing/analysis, Silicon Forensics offers the cute lit
     <td>μFRED</td>
   </tr>
  </table>
--->
+
 So, for those of you who are like me and can't carry anything without breaking it, or simply don't have more luggage space, both companies offer "forensic laptops". These are nothing more than extremely beefy gaming laptops/workstation laptops(SiForce's looks eerily like an Alienware to me). The main benefit of these (other than having RGB for better performance :)) is that they're *much* smaller but can pack up to a desktop processor depending on the specific laptop, such as this [Sager](https://www.sagernotebook.com/Notebook-NP9672M-G1.html), which packs up to a desktop Intel i9 and 128GB of RAM. I would really hesitate to call this a laptop, more of a small desktop with a built in UPS since that battery won't last if it must process items. This, combined with a stand-alone write-blocker (I'll get to these in a later section), will be able to do what those specialized little boxes can do. 
 
 But wait, there's more! In the off chance that you only need to image a device or three, you can also use a portable imager. This is an alternative to the aforementioned solutions- much more compact, but also a uni-tasker, something I'm sure Alton Brown won't approve of. These devices can also have their own place in the lab as a dedicated imaging station that does not take up valuable seat space on forensic workstations. Companies such as [Tableau](https://www.forensiccomputers.com/tableau-tx1-forensic-imager.html) and [Logicube](https://www.logicube.com/shop/forensic-falcon-neo/) make such devices. The Logicube unit is especially nice to have as a dedicated in-lab imaging station as it has dual 10GB NICs, which, while may not get close to saturated with spinning rust, will help if you are imaging NVMe devices. 
