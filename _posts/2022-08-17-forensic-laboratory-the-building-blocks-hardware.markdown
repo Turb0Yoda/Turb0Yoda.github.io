@@ -90,9 +90,33 @@ But wait, there's more! In the off chance that you only need to image a device o
 
 Regardless of what choice you choose, it's always good to keep evidence bags, chains of custody, stickies, etc. to correctly store evidence. Another good practice is to have a dedicated phone and/or camera just to take photos of evidence - this should all be well-known general practice regardless. 
 
+## UPS's
+
+No, not the shipping company, but Uninterupptible Power Supplies, or UPSs, are critical to make sure that not only does the machine imaging or running analysis tasks power off during a brownout or blackout, but to make sure you have time to safely shut off and save work. There are three main types of UPSs; double conversion units, line-interactive, and the standby UPS. Those are ordered in(my opinion) best to not best to have. Having one is better than having none! Additionally, you can also choose between pure sine wave and simulated sine wave. I highly reccomend the former as some power supplies will not be happy with simulated sine wave, and may power off if a switch between mains power and battery power occurs.
+
+### Double Conversion
+
+Double Conversion units are neat in that, in laymans terms, the gear hooked up runs off the battery, while the power simply keeps that battery charged. In the event of a brownout or blackout, there is no faltering in voltage or anything as the battery is the source of power. These units are more ineffecient and generally only seen in rackmount varieties, but if you can get them, I highly reccomend it.
+## UPS
+
+No, not the shipping company, but Uninterruptible Power Supplies, or UPSs, are critical to making sure that not only does the machine imaging or running analysis tasks power off during a brownout or blackout but to make sure you have time to safely shut off and save work. There are three main types of UPSs; double conversion units, line-interactive, and standby UPS. Those are ordered in(my opinion) best to not best to have. Having one is better than having none! Additionally, you can also choose between a pure sine wave and a simulated sine wave. I highly recommend the former as some power supplies will not be happy with a simulated sine wave, and may power off if a switch between mains power and battery power occurs.
+
+### Double Conversion
+
+Double Conversion units are neat in that, in layman's terms, the gear hooked up runs off the battery, while the power simply keeps that battery charged. In the event of a brownout or blackout, there is no faltering in voltage or anything as the battery is the source of power. These units are more inefficient and generally only seen in rackmount varieties, but if you can get them, I highly recommend them.
+
+### Line Interactive
+
+Line Interactive units are much more common. These units power everything off of the mains' power, but in the event of a blackout or brownout, they will switch to the battery. These units also regulate incoming mains voltage before sending it onto your gear, adding more protection.
+
+### Standby
+
+Stand-by units are similar to Line Interactive but do not pre-process/smooth over changes in voltage. They simply switch to battery if a change is detected, whereas line-interactive will process to a degree before switching to battery. As such, these units will burn through batteries quickly.
+
 ## Outro 
 
-That will conclude it for this section of the post. I tried to keep this section focused on the physical, expensive compute gear needed. The next section will be focused more on "odds and ends" such as dedicated write blockers, mobile gear, and various adapters and accessories that might come in handy. 
+That will conclude for this section of the post. I tried to keep this section focused on the physical, expensive compute gear needed. The next section will be focused more on "odds and ends" such as dedicated write blockers, mobile gear, and various adapters and accessories that might come in handy. 
+
 
  
  
@@ -101,3 +125,4 @@ That will conclude it for this section of the post. I tried to keep this section
 *Disclaimer: I'm not sponsored by any of the companies mentioned above, nor do they know (well I don't think they know) that I've written this. 
 
  
+ Edit: 22 August 2022 - added a short section about UPSs
