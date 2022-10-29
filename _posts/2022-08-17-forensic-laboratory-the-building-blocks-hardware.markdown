@@ -90,13 +90,6 @@ But wait, there's more! In the off chance that you only need to image a device o
 
 Regardless of what choice you choose, it's always good to keep evidence bags, chains of custody, stickies, etc. to correctly store evidence. Another good practice is to have a dedicated phone and/or camera just to take photos of evidence - this should all be well-known general practice regardless. 
 
-## UPS's
-
-No, not the shipping company, but Uninterupptible Power Supplies, or UPSs, are critical to make sure that not only does the machine imaging or running analysis tasks power off during a brownout or blackout, but to make sure you have time to safely shut off and save work. There are three main types of UPSs; double conversion units, line-interactive, and the standby UPS. Those are ordered in(my opinion) best to not best to have. Having one is better than having none! Additionally, you can also choose between pure sine wave and simulated sine wave. I highly reccomend the former as some power supplies will not be happy with simulated sine wave, and may power off if a switch between mains power and battery power occurs.
-
-### Double Conversion
-
-Double Conversion units are neat in that, in laymans terms, the gear hooked up runs off the battery, while the power simply keeps that battery charged. In the event of a brownout or blackout, there is no faltering in voltage or anything as the battery is the source of power. These units are more ineffecient and generally only seen in rackmount varieties, but if you can get them, I highly reccomend it.
 ## UPS
 
 No, not the shipping company, but Uninterruptible Power Supplies, or UPSs, are critical to making sure that not only does the machine imaging or running analysis tasks power off during a brownout or blackout but to make sure you have time to safely shut off and save work. There are three main types of UPSs; double conversion units, line-interactive, and standby UPS. Those are ordered in(my opinion) best to not best to have. Having one is better than having none! Additionally, you can also choose between a pure sine wave and a simulated sine wave. I highly recommend the former as some power supplies will not be happy with a simulated sine wave, and may power off if a switch between mains power and battery power occurs.
