@@ -1,7 +1,7 @@
 ---
 title:  "Forensics Laboratory - Forensic Software"
 author: Turb0Yoda
-date:   2022-11-24 18:42:00 -0700
+date:   2022-11-24 18:42:00 -0800
 tags: [laboratory,infrastructure,software]
 comments: true
 ---
