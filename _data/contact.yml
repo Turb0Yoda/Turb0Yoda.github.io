@@ -17,9 +17,9 @@
 
 # Uncomment and complete the url below to enable more contact options
 # -
-#   type: mastodon
-#   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your mastodon account page
+   type: mastodon
+   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
+   url:  'https://haunted.computer/@Turb0Yoda'                  # Fill with your mastodon account page
 # -
 #   type: linkedin
 #   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
