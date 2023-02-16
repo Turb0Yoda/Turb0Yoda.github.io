@@ -58,5 +58,5 @@ If I had another go, I would have also requested mass-loaded vinyl or layers of 
 
 The lighting in the room was also brighter than what was installed elsewhere, to allow for easier reading of the tiny serial numbers on hard drives or M.2 SSDS.
 
-
+# Outro
 In my mind, that constitutes the absolute bare bones building block to start building a lab. The next blog post should be about the actual equipment we used for day-to-day work.

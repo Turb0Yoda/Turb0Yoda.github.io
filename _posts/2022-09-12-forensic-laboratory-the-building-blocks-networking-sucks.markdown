@@ -36,6 +36,6 @@ Example Network Structure:
     - 172.16.64.x/24 - HCI Storage Layer VLAN
     - 172.16.96.x/24 - HCI VM VLAN
 
-## Conclusion
+# Conclusion
 
 This post is really short since the networking side of the house is something I avoid, and don't have enough knowledge to flesh this out. I haven't figured out what the next post will be on yet, probably the particulars of handling evidence and such... we'll see.
