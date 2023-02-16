@@ -6,20 +6,20 @@ tags: [laboratory,infrastructure,networking]
 comments: true
 ---
 
-## Introduction
+# Introduction
 
 I _despise_ networking with a passion. Not because it's overtly complicated.. which it is. It's because I have the absolute worst luck with hardware and making simple configurations work, like when I bricked a Juniper switch by setting a port to trunk. I don't know _how_ it happened or why, but I do know it's what led to that being tossed in the bin. 
 
 Nevertheless, this cursed subject is indeed a requirement to build out a proper laboratory. This post has a list of assumptions about _your_ network, in that your organization already has authentication, VPNs/ZeroTrust, Access Management, AD/DNS, etc all set up. I'll leave covering all that up to the people who know and love networking and will focus primarily on the little nugget that is the lab. Additionally, I won't go too far into configurations of different aspects of networking, primarily due to how different these items can vary from vendor to vendor at all levels of this realm... and because my knowledge doesn't extend that deeply into said realm.
 
 
-## Hardware Considerations
+# Hardware Considerations
 
 This section isn't a hardware buying guide insomuch as what you may want to consider when purchasing equipment. The number one thing that comes to mind outside of vendor preferences is throughput and longevity/upgradeability.
 
 I strongly suggest that someone who is building out a forensics lab in this day push their organization to, at a minimum, get hardware that is capable of 10Gbps for data transfer. The time it takes to transfer images between machines and hot/cold storage will be drastically shortened assuming that the destination and/or source are not a single spinning drive. Additionally, if one is getting into a HCI setup, then greater than 10Gbps is ideal. Offhand companies like iXSystems push to have a 40GB connection to the core network for larger SAN devices. This doesn't mean you shouldn't get a standard 1Gbit switch for management or other items that may only be limited to 1GBit, eg a dongle server. Additionally, some switches, such as Cisco Nexus gear, come with empty/filled slots for expansion ports. If you can't get the buy-in now for a full-fat 10GB or greater switch, these may be worth looking into.
 
-## Isolation, Authentication, and Access
+# Isolation, Authentication, and Access
 
 As per the tradition of a secure location, only authorized people can get in. As such, the lab network should also be similarly locked down with VPNs, captive portals, etc. Generally speaking, each step of authentication will have 2FA from what I have seen, be it through Duo, a RSA token, or another method. Unfortunately, my lack of knowledge in this specific tooling is pretty lackluster outside of product names. I will say that from what I have seen, initial authentication can be done via the corporate SSO, and then inside-lab-network authentication can be handled with either a separate domain or the corporate domain depending on what is wanted.
 

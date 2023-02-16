@@ -6,15 +6,15 @@ tags: [laboratory,infrastructure,hardware]
 comments: true
 ---
 
-## Introduction 
+# Introduction 
 
 Hiya! 
 
 This is part two in my little series about building a forensics lab from the ground up... literally. This post will be going over the basic hardware needed to run a lab, covering all aspects from machines to write blockers to the network. In another post, I hope to explore Hyper-Converged Infrastructure for Forensic Analysis, so this will be focused on a lab that does not have a relatively high volume of incoming evidence or work in general. I broke this post up into two parts, the second part should be coming out sometime soon. 
 
-## Physical Machines 
+# Physical Machines 
 
-### Forensic Towers 
+## Forensic Towers 
 The first step is to have a bank account with a large amount of money. I wish this was a joke, but unfortunately, tailor-built forensic workstations are extremely pricey. Not only should the hardware be top of the line and beefy, but items like drive cages, DVD/Blu-Ray/CD drives, and even write blockers are often shoved into these chassis. For example, a base configuration [SiForce Lightning X](https://siliconforensics.com/products/forensic-workstations/tower-workstations/siforce-lightning-x-hardware-defined-forensics.html) comes out to a lovely 10,695.00 USD before tax, which isn't an easy pill to swallow. 
 
 <center>
@@ -58,14 +58,14 @@ If you do take the DIY route, or go with a non-forensic workstation boutique bui
 * 10GB LAN 
   * This is more of a future-proofing step and can also be added in with an add-on card, but 10GB LAN to transfer case files is a godsend. 
 
-### MacOS 
+# MacOS 
 
 If you thought you were done spending the big bucks, you were wrong. While tools such as AXIOM and X-Ways *can* parse out MacOS systems, sometimes it is just best to have a dedicated Mac system for processing and analysis, especially with the advent of the new M1/M2 chips from Apple. Unfortunately, I have had no experience with forensically imaging/analyzing the M1/M2 gear, and only a small amount with normal MacOS. 
 
 So, this section is pretty short and sweet. Offhand, I am not entirely sure if software such as Sumuri or Cellebrite will run on M1/M2 gear, but it will run on Intel-based Macs, and will still be able to analyze M1/M2 gear. My current recommendation is to buy either a decently specced Mac Pro (~9,000USD for a system with a 16c/32t processor and 96GB of RAM), or then a decently specced Mac Mini (much cheaper!). In all honesty, unless you happen to have a lot of analysis that needs native MacOS, I would stick with the Mac Mini and a 10GB NIC to host your data elsewhere, as the largest amount of storage on a Mac Mini is 2TB (from this old link on Apple's website). 
  
 
-### Mobile Workstations and Jump kits 
+# Mobile Workstations and Jump kits 
 
 Now let's say you get a call from your boss, and suddenly, you find yourself with a plane ticket for a flight that leaves in 4 hours, and you need to somehow pack all your gear into a neat little case for on-site imaging and analysis. Well fear not, but there are a few options for this! 
 
@@ -90,23 +90,23 @@ But wait, there's more! In the off chance that you only need to image a device o
 
 Regardless of what choice you choose, it's always good to keep evidence bags, chains of custody, stickies, etc. to correctly store evidence. Another good practice is to have a dedicated phone and/or camera just to take photos of evidence - this should all be well-known general practice regardless. 
 
-## UPS
+# UPS
 
 No, not the shipping company, but Uninterruptible Power Supplies, or UPSs, are critical to making sure that not only does the machine imaging or running analysis tasks power off during a brownout or blackout but to make sure you have time to safely shut off and save work. There are three main types of UPSs; double conversion units, line-interactive, and standby UPS. Those are ordered in(my opinion) best to not best to have. Having one is better than having none! Additionally, you can also choose between a pure sine wave and a simulated sine wave. I highly recommend the former as some power supplies will not be happy with a simulated sine wave, and may power off if a switch between mains power and battery power occurs.
 
-### Double Conversion
+## Double Conversion
 
 Double Conversion units are neat in that, in layman's terms, the gear hooked up runs off the battery, while the power simply keeps that battery charged. In the event of a brownout or blackout, there is no faltering in voltage or anything as the battery is the source of power. These units are more inefficient and generally only seen in rackmount varieties, but if you can get them, I highly recommend them.
 
-### Line Interactive
+## Line Interactive
 
 Line Interactive units are much more common. These units power everything off of the mains' power, but in the event of a blackout or brownout, they will switch to the battery. These units also regulate incoming mains voltage before sending it onto your gear, adding more protection.
 
-### Standby
+## Standby
 
 Stand-by units are similar to Line Interactive but do not pre-process/smooth over changes in voltage. They simply switch to battery if a change is detected, whereas line-interactive will process to a degree before switching to battery. As such, these units will burn through batteries quickly.
 
-## Outro 
+# Outro 
 
 That will conclude for this section of the post. I tried to keep this section focused on the physical, expensive compute gear needed. The next section will be focused more on "odds and ends" such as dedicated write blockers, mobile gear, and various adapters and accessories that might come in handy. 
 

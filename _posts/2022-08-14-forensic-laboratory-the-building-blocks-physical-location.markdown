@@ -6,16 +6,16 @@ tags: [laboratory,infrastructure]
 comments: true
 ---
 
-## Introduction
+# Introduction
 Hiya!
 
 This is the beginning of a series of posts detailing my <italicize>lovely<italicize> experience of building up a new Forensics Laboratory(Lab) for $lastjob. I was put in the unique position to (partially) design and manage the construction of the new facility, and move all our infrastructure over while adding to the backbone and other infrastructure we had previously. As some background, I was managing this facility due to the prior lab manager leaving, and I, while not terribly close to the facility, had spent the most time in forensic labs, including that one, to anyone local, and was thus delegated to managing that facility. The move was not something I had ever planned to take on, but corporate changes with the building required a new facility to be built. Most of what was in the old facility, in terms of both setup, logic, and physical infrastructure, was all tribal knowledge, so alongside the planning/building/move, it was critical to actually document why things were done in such a way for anyone else who took over after me. 
 
 Additionally, we also had the FBI CJIS audit and ISO 27001/27002 audit and attestation to contend with. Both have extremely similar, if not identical compliance requirements for most items, however, FBI CJIS is what let us work with local/state/federal governments on various cases if need be. The CJIS audit also comes with the lovely reminder that if the evidence is mishandled, the data custodian gets time in a comfy cell!
 
-A lot of this information is based on this lovely book here: [Digital Forensics Processing and Procedures: Meeting the Requirements of ISO 17020, ISO 17025, ISO 27001 and Best Practice Requirements](https://smile.amazon.com/gp/product/1597497428), which was recommended to me by my former co-worker/mentor(thanks J.W!) who has a hell of a lot more experience with this stuff, and who guided me through the finer points of the entire process.
+A lot of this information is based on this lovely book here: [Digital Forensics Processing and Procedures: Meeting the Requirements of ISO 17020, ISO 17025, ISO 27001 and Best Practice Requirements](https://smile.amazon.com/gp/product/1597497428) and [Building a Digital Forensic Laboratory](https://www.oreilly.com/library/view/building-a-digital/9780080949536/), which was recommended to me by my former co-worker/mentor(thanks J.W!) who has a hell of a lot more experience with this stuff, and who guided me through the finer points of the entire process.
 
-## Physical Location
+# Physical Location
 
 I suppose the obvious comes first- the actual location and general access rules of the lab itself. Not anyone can walk into the lab willy-nilly, let alone the building itself. A low-key area, one wholly owned and operated by the company tends to be ideal. All of the usual physical security steps apply to both the building and the lab. Employees must have at bare minimum a badge to enter the building, and ideally some sort of '2FA' factor, such as the ones listed below:
 
@@ -46,7 +46,7 @@ For the new location, we were able to segregate the lab into two rooms:
 
 The primary room housed our forensic machines and basic supplies, adapters, etc. Anyone on the ProServ team was allowed into this room. The second room housed evidence safes and servers. Only the Lab Manager and Data Custodians were allowed into this room. 
 
-## Additional Considerations for Physical Location
+# Additional Considerations for Physical Location
 
 Aside from the access requirements above, we also added several extras that aren't entirely required but are helpful. 
 

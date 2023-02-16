@@ -6,13 +6,13 @@ tags: [laboratory,infrastructure,software]
 comments: true
 ---
 
-## Introduction
+# Introduction
 
 If I've seen anything close to divisive in the industry, it's the software forensicators use in their day-to-day work. A lot of tools come and go, and a lot remain giants in the field. I don't intend this as an end-all-be-all list of tools you'll see in a lab, but maybe more of the more popular/often used tools, closed-source or open-source, extremely pricey or free-99. At the end of the day, I like to describe most of these tools as a different way to do the same thing. If you're trying to pull out the NTUSER.DAT file from an image or triage data, you can just as easily do that with X-WAYS or EnCase or FTKi or Autopsy. 
 
 I'll do my best to keep this specific post updated with any more tools I find(primarily the specialized tooling section). Additionally, some of these tools can function well in multiple categories. I've put them in what I believe their main focus is, but I will note down if they're able to carry out other tasks- but without further ado...
 
-## Traditional Dead Disk Tooling
+# Traditional Dead Disk Tooling
 
 - [Autopsy & The Sleuth Kit](https://www.sleuthkit.org/)
     - Autopsy, and by extension The Sleuth Kit, holds a very special place in my heart. This is the tool I used to teach workshops when I was in college, and instead of all of the tools in this section, which are paid, Autopsy(TSK) is free. I can't thank the people enough behind this project(first and foremost in my mind is Dr. Brian Carrier(Writing this post is the first time I learned he had a doctorate, I shouldn't be surprised yet I am) and the Basis Tech team) in keeping this software alive. If you are in a position where you do not have access to the paid tools, you **HAVE** to have Autopsy in your arsenal. Even with the paid tools, we still keep an updated copy of Autopsy ready to go.
@@ -31,7 +31,7 @@ I'll do my best to keep this specific post updated with any more tools I find(pr
 - [X-Ways Forensic](https://www.x-ways.net/forensics/gramm)
     - I had never heard of X-Ways until relatively recently, only a few years ago. Since then, it has become the one tool that seemingly every shop uses in my eyes. It is both my greatest nightmare and greatest asset. Brett Shavers offers a [great guide](https://smile.amazon.com/X-Ways-Forensics-Practitioners-Guide-Shavers/dp/0578399601) for XWF, I highly reccomend grabbing it if you find yourself working with XWF. XWF also handles MacOS filesystems, but I know little of that since MacOS scares me. 
 
-## Mobile Forensics
+# Mobile Forensics
 
 - [Cellebrite](https://cellebrite.com/en/home/)
     - Infamous or famous, Cellebrite has carved its name into stone as far as mobile forensics goes. With the Acquisition of BlackBag Technologies, Cellebrite is also now a giant in the MacOS Forensics arena, and is the defacto name for both Mobile and MacOS forensics.
@@ -48,7 +48,7 @@ I'll do my best to keep this specific post updated with any more tools I find(pr
 - [Oxygen Forensics](https://www.oxygen-forensic.com/en/)
     - Oxygen is another firm that specializes in mobile forensics. I personally have 0 experience with their tooling, so I can't speak to anything about it other than it exists.
 
-## Automotive Forensics
+# Automotive Forensics
 *Disclaimer: I haven't touched automotive forensics, so I will not be doing much other than listing names here.
 
 - [Berla](https://berla.co/)
@@ -57,7 +57,7 @@ I'll do my best to keep this specific post updated with any more tools I find(pr
 
 - [Teel Tech](https://teeltech.com/)
 
-## Specialized Tooling
+# Specialized Tooling
 
 - [AccessData Registry Viewer](https://accessdata.com/product-download/registry-viewer-2-0-0)
     - Not updated anymore, but a useful tool for viewing Registry Hives quickly.
