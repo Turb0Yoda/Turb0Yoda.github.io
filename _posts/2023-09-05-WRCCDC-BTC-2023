@@ -1,0 +1,113 @@
+---
+title:  "WRCCDC 2023 Aftermath: DFIR, and BlueTeamCon"
+author: Turb0Yoda
+date:   2023-09-05 18:45:00 -0800
+tags: [WRCCDC, CCDC, DFIR, Talk]
+comments: true
+---
+
+# Introduction
+
+This year, [@Bluescreenofwin](https://twitter.com/bluescreenofwin) and I, were able to do some DFIR on boxes after this year's regional round for WRCCDC and give a presentation at [BlueTeamCon 2023](https://blueteamcon.com/), where we discussed the trends seen throughout the competition. Most of it can be boiled down into several industry basics that not only do teams not follow, but a surprising amount of large corporations. The slides for the talk, alongside other resources, are linked at the bottom of this post.
+
+# What is a CCDC?
+
+CCDC is the Collegiate Cyber Defense Competition. This competition drops a team of eight students into a production environment with two goals: Keep services up for customers, and survive against a red team that didn't exactly sign a Rules of Engagement. There are nine regions across the United States in total - and alongside a host of many volunteers, Bluescreen and I help to run the Western Region as part of the Operations Team, aka Black Team. 
+
+The environment we create does not have much in the way to security tooling to emulate an immature company. We do not give the students any AV/EDR tooling, and we do not use the latest and greatest security recommendations. These boxes are purposely a mix of EOL, up-to-date(ish) hosts, and one or two oddballs thrown in for fun. This year, we did give the teams a SIEM(the one built into Kali Purple) to leverage should they want to. We'll touch on this specific point later on.
+
+During the competition, students are also expected to work with both clientele and upper management as part of their daily business function. This can be anything from security briefings, to tasking given by shareholders(eg set up new software), or simple madhouse fun of spouting random stuff at the teams in order to confuse them.
+
+The overarching goal of this competition is to overstimulate the student teams. It seems rather asinine on the surface, but does hold merit when teaching students how to multi-task and learn new things on the fly. Additionally, CCDC is not a competition focused solely on defense or incident response. It is a grouping of many related business tasks that a student might often see when they are working in a Full-Time position. 
+
+<center>
+<figure>
+    <img src="https://raw.githubusercontent.com/Turb0Yoda/turb0yoda.github.io/master/assets/post_images/CCDCRegionalMap.png" width="550" height="550"
+         alt="CCDC Regional Map">
+    <figcaption>A map of all the regions in the US</figcaption> 
+</figure>
+</center>
+
+# Why This Talk?
+
+This talk was born out of a harebrained idea and a want to go to touch the Bean in Chicago. Whilst the former goal reached completion, the latter did not. 
+
+In all honesty, curiosity drove us to try this. In my dayjob as an IR consultant, I get to see a swathe of new environments almost daily, and the large gaps of maturity between all of them. As a Senior Systems Engineer, Bluescreens' job is to harden his environment against the latest threats. Both of us see the latest trends in security, but do the students see them, and use them during the competition? 
+
+Most classes do not cover the latest on-goings in security- any of this knowledge is most likely gleaned from external sources, be it current or past internships, other competitions, news, or the social network. We were curious to see which teams were able to take advantage of the resources they have, and how they applied it to the competition.
+
+# Our Methodology
+
+Given the relatively short time between the CFP approval(), the actual regional competition that we took our data from, and the balance between $dayjob and this, we elected to pick two critical systems from the student environment- Bluecheese and Oaxaca. Outside of being lovely cheeses, these boxes represented the primary Domain Controller and the primary company website box in each student environment respectively. 
+
+<center>
+<figure>
+    <img src="https://raw.githubusercontent.com/Turb0Yoda/turb0yoda.github.io/master/assets/post_images/2023_WRCCDC_Regionals_Topology.png" width="550" height="550"
+         alt="WRCCDC 2023 Regionals Topology">
+    <figcaption>The (Mostly) Full Scope for this Year's Regionals</figcaption> 
+</figure>
+</center>
+
+From here, we chose six snapshots throughout the two-day length of the competition - Four on Day One, and Two on Day Two. In theory, the first day would be Red Team worming their way through the environment and establishing persistence, while also causing some havoc. From here, we used KAPE and CyLR to collect triage data from all the snapshots, processed them using Log2Timeline/Plaso, and then threw them into a Timesketch instance.
+
+Of note, we have to thank Ryan Chapman and the SANS FOR528 course, as we used their method of parsing the triage data(using MFTEcmd for the MFT instead of L2Ts own parser) and streamlining it into a single plaso file. I am also forced to admit that I should have listened to Ryan in the first place, and owe him an ice cold beer for his help.
+
+From here, it was a simple matter of wishing we remembered an ounce of OpenSearch's query language, and time.
+
+# What we Found out
+
+## Red Team
+K.I.S.S was the motto of our red team. ZeroLogin EternalBlue was the primary method of Windows Initial Access, and for Linux, simple Brute forcing and abuse of default credentials that the Red Team found. Persistence was primarily OpenSSH and malicious accounts in the directory. Overall, the usage of default creds accounted for 56% of the Red Teams initial access, similar to the usage of insecure passwords in the real world. Our Red Team did not employ any amazingly advanced tactics outside of the use of Cobalt Strike and Metasploit.
+
+## Blue Team
+Students, on the other hand, did not often follow basic practices during the competition. Only one team out of the group of eight competing consistently rotated the default credentials throughout the competition and after box resets. Box Resets allow teams to reset a box to the start of the competition state if they end up getting destroyed by either the blue teamers themselves or red team. The consequence of this is they lose all hardening and credential rotations that may have taken place. Most of the teams relied heavily on box resets, and consequently kept on getting breached by Red Team due to the lack of credential rotations.
+
+<center>
+<figure>
+    <img src="https://raw.githubusercontent.com/Turb0Yoda/turb0yoda.github.io/master/assets/post_images/BlueTeamsThoughTheyWon.png" width="550" height="550"
+         alt="lolblueteams">
+</figure>
+</center>
+
+
+Only our top two teams enumerated the Active Directory domain for malicious users and infrastructure, and only our top team employed the usage of Sysmon for extended logging. Both these top two teams however, did use a SIEM of their choosing. NONE of the teams leveraged the Kali Purple SIEM that was handed to them. These top two teams were also at the top of their class in both defense and incident response, keeping and clawing back the most points compared to the other teams
+
+# What Students should learn
+
+This blog post is not meant to simply mock the teams that did not do as well. Our goal in CCDC is to teach students by giving them experience that no class or extracurricular activity(that we know of) replicates. Overall, from the ops team perspective, we would like to see all students do the basics of security, between credential rotation, environment enumeration, and logging. This is however, far easier said than done given the generated chaos of the competition. Those three steps would make the Red Team step up their game pretty quickly, and from thereon students can build to more advanced skills such as on-the-fly triage of popped systems.
+
+# What Ops needs to do better
+
+The Operations team does share some burden in the performance of Blue Teams. Consistently, we are asked to give more resources and trainings on how to succeed in the competition, and each year we are unable to fully fufill this goal. Additionally, our environments, while whimsical and cobbled together, are not entirely accurate of what we see in industry today. While we do see our fair share of environments that are held together with duct tape and dreams, we also see our fair share of environments that are monitored extensively and manned by experienced analysts and responders who are able to respond to a pin dropping. Overall, we need to work on having less fun with the boxes we create, and work moreso on resilliences of systems and services - not everything can be an 8 year old version of Wordpress.
+
+We also ended up "Black Teaming" ourselves- as the systems we put out did not meet our own basic requirements! Every system must have a SSH key or other emergency backdoor that is offlimits to all teams but us for purposes of troubleshooting and assisting teams/the competition at large. This was not fully verified, and tripled the time it took to create triage packages of all these systems, as well as causing issues during competition.
+
+# Future Plans
+
+Black Team is always doing our best to improve the competition year after year, and keep things inline with the industry as much as we can. In our attempts to do this, competitors, and those who may access this data in the future, will see some key changes.
+
+Primarily, we plan to once again give teams a SIEM, be it Kali Purple, Greylog, Wazuh, or something else. Additionally, all of our systems should be coming with some extended logging tooling and response tooling. This would primarily be Sysmon alongside Velociraptor on all the systems. Our hopes is that this will enable more teams to do more Incident Response during the competition, or at the very least have a closer eye on their environment as the competition progresses. 
+
+# Resources
+
+We hope to turn this DFIR project into a yearly item, both the triage data and perhaps even a report. For this year, we are hosting(for the forseeable future) the triage data collected from these systems on our archive server. Additionally, the slides given to attendees at BlueTeamCon 2023 are linked on my GitHub below.
+
+A huge thank you to a multitude of people- from the volunteers that help run not only WRCCDC but the other CCDC regions, to the students who find enjoyment in the competition we make, to the wonderful organizers of BlueTeamCon. A formal request from me and Blue to the conference organizers... can we have Pequods catered?
+
+Triage Data:
+
+https://dfir.wrccdc.org/dfir/
+
+Presentation:
+
+https://github.com/Turb0Yoda/Presentations/blob/master/BTC-2023.pptx
+
+WRCCDC Twitter & LinkedIn:
+
+https://www.linkedin.com/company/wrccdc/
+
+https://twitter.com/wrccdc
+
+Bluescreenofwin's Twitter:
+
+https://twitter.com/bluescreenofwin
