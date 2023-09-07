@@ -96,18 +96,18 @@ A huge thank you to a multitude of people- from the volunteers that help run not
 
 Triage Data:
 
-https://dfir.wrccdc.org/dfir/
+[https://dfir.wrccdc.org/dfir/](https://dfir.wrccdc.org/dfir/)
 
 Presentation:
 
-https://github.com/Turb0Yoda/Presentations/blob/master/BTC-2023.pptx
+[https://github.com/Turb0Yoda/Presentations/blob/master/BTC-2023.pptx](https://github.com/Turb0Yoda/Presentations/blob/master/BTC-2023.pptx)
 
 WRCCDC Twitter & LinkedIn:
 
-https://www.linkedin.com/company/wrccdc/
+[https://www.linkedin.com/company/wrccdc/](https://www.linkedin.com/company/wrccdc/)
 
-https://twitter.com/wrccdc
+[https://twitter.com/wrccdc](https://twitter.com/wrccdc)
 
 Bluescreenofwin's Twitter:
 
-https://twitter.com/bluescreenofwin
+[https://twitter.com/bluescreenofwin](https://twitter.com/bluescreenofwin)
